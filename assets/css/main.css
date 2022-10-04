@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .system{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-image: url(https://naukatv.ru/upload/images/original/4f/4fea30d2395e228a9adc1e9e949ce62c59b5790d.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .sun{
+    background-color: yellow;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg/220px-The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg);
+    width: 190px;
+    height: 190px;
+    border: none;
+    border-radius: 100%;
+    position: fixed;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .earth{
+    background-color: green;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/220px-The_Earth_seen_from_Apollo_17.jpg);
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 100%;
+    position: absolute;
+    animation: earth 6s linear infinite;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .mars{
+    background-color: bisque;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/220px-OSIRIS_Mars_true_color.jpg);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 100%;
+    position: absolute;
+    animation: mars 5s linear infinite;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .saturn{
+    background-image: url(https://solarsystem.nasa.gov/system/news_items/main_images/814_pia21046.jpg);
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: none;
+    position: absolute;
+    animation: sat 9s linear infinite;
+    background-position: center;
+   
+    background-size: 100%;
+  }
+  
+  .neptun{
+   
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg/220px-Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg);
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: none;
+    position: absolute;
+    animation: nep 11s linear infinite;
+    background-position: center;
+    background-size: 100%;
+  }
+  
+  @keyframes earth {
+    from{
+      transform: rotate(0deg) translateX(130px);
+    }
+    to{
+      transform: rotate(300deg) translateX(130px);
+    }
+    
+  }
+  @keyframes mars {
+    from{
+      transform: rotate(0deg) translateX(150px);
+    }
+    to{
+      transform: rotate(320deg) translateX(170px);
+    }
+    
+  }
+ 
+  @keyframes sat {
+    from{
+      transform: rotate(0deg) translateX(180px);
+    }
+    to{
+      transform: rotate(350deg) translateX(200px);
+    }
+    
+  }
+ 
+  @keyframes nep {
+    from{
+      transform: rotate(0deg) translateX(220px);
+    }
+    to{
+      transform: rotate(300deg) translateX(190px);
+    }
+    
+  }
